@@ -1,0 +1,46 @@
+ #
+ # Copyright @ 2019 Audi AG. All rights reserved.
+ # 
+ #     This Source Code Form is subject to the terms of the Mozilla
+ #     Public License, v. 2.0. If a copy of the MPL was not distributed
+ #     with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ # 
+ # If it is not possible or desirable to put the notice in a particular file, then
+ # You may include the notice in a location (such as a LICENSE file in a
+ # relevant directory) where a recipient would be likely to look for such a notice.
+ # 
+ # You may add additional accurate notices of copyright ownership.
+ #
+if(fep_controller_lib_FOUND)
+    return()
+endif()
+
+#we only compile and link if we resolve dependencies to the fep_system library
+find_package(fep_system REQUIRED)
+
+# Add imported library target
+set(library_name fep_controller_lib)
+add_library(${library_name} SHARED IMPORTED)
+
+if (MSVC)
+    set_target_properties(${library_name} PROPERTIES
+        INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_LIST_DIR}/include"
+        INTERFACE_LINK_LIBRARIES "fep_system;ws2_32;iphlpapi;rpcrt4;winmm"
+        IMPORTED_IMPLIB_DEBUG ${CMAKE_CURRENT_LIST_DIR}/lib/${library_name}d@FEP_CONTROLLER_VERSION_MAJOR@.@FEP_CONTROLLER_VERSION_MINOR@.lib
+        IMPORTED_IMPLIB_RELEASE ${CMAKE_CURRENT_LIST_DIR}/lib/${library_name}@FEP_CONTROLLER_VERSION_MAJOR@.@FEP_CONTROLLER_VERSION_MINOR@.lib
+        IMPORTED_IMPLIB_RELWITHDEBINFO ${CMAKE_CURRENT_LIST_DIR}/lib/${library_name}@FEP_CONTROLLER_VERSION_MAJOR@.@FEP_CONTROLLER_VERSION_MINOR@.lib
+        IMPORTED_LOCATION_DEBUG ${CMAKE_CURRENT_LIST_DIR}/lib/${library_name}d@FEP_CONTROLLER_VERSION_MAJOR@.@FEP_CONTROLLER_VERSION_MINOR@.dll
+        IMPORTED_LOCATION_RELEASE ${CMAKE_CURRENT_LIST_DIR}/lib/${library_name}@FEP_CONTROLLER_VERSION_MAJOR@.@FEP_CONTROLLER_VERSION_MINOR@.dll
+        IMPORTED_LOCATION_RELWITHDEBINFO ${CMAKE_CURRENT_LIST_DIR}/lib/${library_name}@FEP_CONTROLLER_VERSION_MAJOR@.@FEP_CONTROLLER_VERSION_MINOR@.dll
+    )
+else()
+    set_target_properties(${library_name} PROPERTIES
+        INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_LIST_DIR}/include"
+        INTERFACE_LINK_LIBRARIES "fep_system;-Wl,--start-group;-Wl,--no-as-needed;pthread;rt;dl"
+        IMPORTED_LOCATION_DEBUG ${CMAKE_CURRENT_LIST_DIR}/lib/lib${library_name}d@FEP_CONTROLLER_VERSION_MAJOR@.@FEP_CONTROLLER_VERSION_MINOR@.so
+        IMPORTED_LOCATION_RELEASE ${CMAKE_CURRENT_LIST_DIR}/lib/lib${library_name}@FEP_CONTROLLER_VERSION_MAJOR@.@FEP_CONTROLLER_VERSION_MINOR@.so
+        IMPORTED_LOCATION_RELWITHDEBINFO ${CMAKE_CURRENT_LIST_DIR}/lib/lib${library_name}@FEP_CONTROLLER_VERSION_MAJOR@.@FEP_CONTROLLER_VERSION_MINOR@.so
+    )
+endif()
+
+set(fep_controller_lib_FOUND true)

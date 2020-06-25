@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<property_file xmlns="http://fep.vwgroup.com/system/2.0/properties">
+    <schema_version>2.0.0</schema_version>
+    
+    <system_timing_properties>
+    </system_timing_properties>
+    
+    <system_properties>
+    </system_properties>
+    
+    <element_instances_properties>
+        <element_instance>
+            <id>test_part</id>
+            <properties>
+                <property>
+                    <name>/bool/value</name>
+                    <type>bool</type>
+                    <value>true</value>
+                </property>
+                <property>
+                    <name>/double/pos2/</name>
+                    <type>double</type>
+                    <value>0.0</value>
+                </property>
+                <property>
+                    <name>/string/test/pfad</name>
+                    <type>string</type>
+                    <value>this is a string</value>
+                </property>
+                <property>
+                    <name>/parameter1</name>
+                    <type>int</type>
+                    <value>3</value>
+                </property>
+            </properties>
+        </element_instance>
+    </element_instances_properties>
+</property_file>

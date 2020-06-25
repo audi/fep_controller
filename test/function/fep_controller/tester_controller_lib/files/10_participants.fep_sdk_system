@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system xmlns="http://fep.vwgroup.com/system/2.0/sdk">
+    <schema_version>2.0.0</schema_version>
+    <name>FEP_SYSTEM</name> <!-- this has no functionality within FEP 2 but will in FEP 3 -->
+    <id>FEP_SYSTEM_CONTROLLER_LIB_TEST</id> <!-- this is only for documentation (no functionality within FEP 2) -->
+    <description>This is an example of a FEP system.</description>
+    <version>1.0.0</version> <!-- this is only for documentation (no functionality within FEP 2) -->
+    <author>AUDI AG</author>
+    <participants> <!-- this was been changed to participant because systems are a collection of participants with loaded elements!-->
+        <participant>
+            <!-- This id has to be unique in the whole system (in FEP 2)-->
+            <!-- This is the element id in FEP 2 by default (could be different, but is not used like that at the moment!)-->
+            <address>test_part_0</address>
+            <init_priority>0</init_priority>
+            <start_priority>0</start_priority>
+            <!-- This id has to be unique in the whole system -->
+            <element_instance>
+                <id>test_part_0</id>
+                <type>type_id</type>
+                <mappings>
+                    <input>
+                        <!--see example: map_x1_i: m-->
+                        <file_reference>x1_input.map</file_reference>
+                    </input>
+                    <output>
+                        <!--see example: map_x1_o: A, B, C-->
+                        <file_reference>x1_output.map</file_reference>
+                    </output>
+                </mappings>
+                <timing> 
+                    <!--see doc/xsd/element/2.0/example/example_2.0.fep_element_timing for a example of this file type-->
+                    <file_reference>x1.fep_element_timing</file_reference>
+                </timing>
+            </element_instance>
+        </participant>
+        <participant>
+            <!-- This id has to be unique in the whole system for now -->
+            <address>test_part_1</address>
+            <init_priority>1</init_priority>
+            <start_priority>1</start_priority>
+            <element_instance>
+                <!-- This id has to be unique in the whole system -->
+                <id>test_part_1</id>
+                <type>type_id</type>
+                <mappings>
+                    <output>
+                        <!--see example: map_x2_o: A, B, C-->
+                        <file_reference>x2_output.map</file_reference>
+                    </output>
+                </mappings>
+            </element_instance>
+        </participant>
+        <participant>
+            <address>test_part_2</address>
+            <init_priority>2</init_priority>
+            <start_priority>2</start_priority>
+            <!-- This id has to be unique in the whole system -->
+            <element_instance>
+                <id>test_part_2</id>
+                <type>type_id</type>
+                <mappings>
+                    <input>
+                        <!--see example: map_y1_1: A, D, b-->
+                        <file_reference>y1_input.map</file_reference>
+                    </input>
+                </mappings>
+            </element_instance>
+        </participant>
+        <participant>
+            <address>test_part_3</address>
+            <init_priority>3</init_priority>
+            <start_priority>3</start_priority>
+            <!-- This id has to be unique in the whole system -->
+            <element_instance>
+                <id>test_part_3</id>
+                <type>type_id</type>
+                <mappings>
+                    <input>
+                        <!--see example: map_y1_1: A, D, b-->
+                        <file_reference>y1_input.map</file_reference>
+                    </input>
+                </mappings>
+            </element_instance>
+        </participant>
+        <participant>
+            <address>test_part_4</address>
+            <init_priority>4</init_priority>
+            <start_priority>4</start_priority>
+            <element_instance>
+                <!-- This id has to be unique in the whole system -->
+                <id>test_part_4</id>
+                <type>type_id</type>
+                <mappings>
+                    <input>
+                        <!--see example: map_y2_1: A, D, b-->
+                        <file_reference>y2_input.map</file_reference>
+                    </input>
+                </mappings>
+            </element_instance>
+        </participant>
+        <participant>
+            <address>test_part_5</address>
+            <init_priority>5</init_priority>
+            <start_priority>5</start_priority>
+            <element_instance>
+            <!-- This id has to be unique in the whole system -->
+            <id>test_part_5</id>
+            <type>type_id</type>
+                <mappings>
+                    <output>
+                        <!--see example: map_w_o: a, k-->
+                        <file_reference>w_output.map</file_reference>
+                    </output>
+                </mappings>
+            </element_instance>
+        </participant>
+        <participant>
+            <address>test_part_6</address>
+            <init_priority>6</init_priority>
+            <start_priority>6</start_priority>
+            <element_instance>
+                <!-- This id has to be unique in the whole system -->
+                <id>test_part_6</id>
+                <type>type_id</type>
+                <mappings>
+                    <input>
+                        <!--see example: map_y2_1: A, D, b-->
+                        <file_reference>y2_input.map</file_reference>
+                    </input>
+                </mappings>
+            </element_instance>
+        </participant>
+        <participant>
+            <address>test_part_7</address>
+            <init_priority>7</init_priority>
+            <start_priority>7</start_priority>
+            <element_instance>
+                <!-- This id has to be unique in the whole system -->
+                <id>test_part_7</id>
+                <type>type_id</type>
+                <mappings>
+                    <input>
+                        <!--see example: map_y2_1: A, D, b-->
+                        <file_reference>y2_input.map</file_reference>
+                    </input>
+                </mappings>
+            </element_instance>
+        </participant>
+        <participant>
+            <address>test_part_8</address>
+            <init_priority>8</init_priority>
+            <start_priority>8</start_priority>
+            <element_instance>
+                <!-- This id has to be unique in the whole system -->
+                <id>test_part_8</id>
+                <type>type_id</type>
+                <mappings>
+                    <input>
+                        <!--see example: map_y2_1: A, D, b-->
+                        <file_reference>y2_input.map</file_reference>
+                    </input>
+                </mappings>
+            </element_instance>
+        </participant>
+        <participant>
+            <address>test_part_9</address>
+            <init_priority>9</init_priority>
+            <start_priority>9</start_priority>
+            <element_instance>
+                <!-- This id has to be unique in the whole system -->
+                <id>test_part_9</id>
+                <type>type_id</type>
+                <mappings>
+                    <input>
+                        <!--see example: map_y2_1: A, D, b-->
+                        <file_reference>y2_input.map</file_reference>
+                    </input>
+                </mappings>
+            </element_instance>
+        </participant>
+    </participants>
+</system>

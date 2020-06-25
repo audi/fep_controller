@@ -1,0 +1,99 @@
+common:
+    files:
+        - fep_controller-config.cmake
+        - fep_controller-config-version.cmake
+        - include/fep_controller/fep_controller.h
+        - src/fep_controller/fep_controller.cpp
+        - include/fep_controller/fep_controller_export.h
+        - doc/changelog.md
+        - doc/license/used_licenses/a_util/MPL2.0.txt
+        - doc/license/used_licenses/a_util/licenses.txt
+        - doc/license/used_licenses/a_util/used_oss.md
+        - doc/license/used_licenses/ddl/MPL2.0.txt
+        - doc/license/used_licenses/ddl/mpl.md
+        - doc/license/used_licenses/ddl/used_licenses.md
+        - doc/license/used_licenses/ddl/used_licenses/a_util/MPL2.0.txt
+        - doc/license/used_licenses/ddl/used_licenses/a_util/licenses.txt
+        - doc/license/used_licenses/ddl/used_licenses/a_util/used_oss.md
+        - doc/license/used_licenses/ddl/used_licenses/list_used_licenses.md
+        - doc/license/used_licenses/fep_sdk_metamodel/CONTRIBUTION.md
+        - doc/license/used_licenses/fep_sdk_metamodel/MPL2.0.txt
+        - doc/license/used_licenses/fep_sdk_metamodel/mpl.md
+        - doc/license/used_licenses/fep_sdk_metamodel/used_licenses/a_util/MPL2.0.txt
+        - doc/license/used_licenses/fep_sdk_metamodel/used_licenses/a_util/licenses.txt
+        - doc/license/used_licenses/fep_sdk_metamodel/used_licenses/a_util/used_oss.md
+        - doc/license/used_licenses/fep_sdk_metamodel/used_licenses/ddl/MPL2.0.txt
+        - doc/license/used_licenses/fep_sdk_metamodel/used_licenses/ddl/mpl.md
+        - doc/license/used_licenses/fep_sdk_metamodel/used_licenses/ddl/used_licenses.md
+        - doc/license/used_licenses/fep_sdk_metamodel/used_licenses/ddl/used_licenses/a_util/MPL2.0.txt
+        - doc/license/used_licenses/fep_sdk_metamodel/used_licenses/ddl/used_licenses/a_util/licenses.txt
+        - doc/license/used_licenses/fep_sdk_metamodel/used_licenses/ddl/used_licenses/a_util/used_oss.md
+        - doc/license/used_licenses/fep_sdk_metamodel/used_licenses/ddl/used_licenses/list_used_licenses.md
+        - doc/license/used_licenses/fep_sdk_system/licenses.txt
+        - doc/license/used_licenses/fep_sdk_system/rti_ndds_license.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/a_util/MPL2.0.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/a_util/licenses.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/a_util/used_oss.md
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/ddl/MPL2.0.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/ddl/mpl.md
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/ddl/used_licenses.md
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/ddl/used_licenses/a_util/MPL2.0.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/ddl/used_licenses/a_util/licenses.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/ddl/used_licenses/a_util/used_oss.md
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/ddl/used_licenses/list_used_licenses.md
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/licenses.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/rti_ndds_license.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/a_util/MPL2.0.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/a_util/licenses.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/a_util/used_oss.md
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/ddl/MPL2.0.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/ddl/mpl.md
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/ddl/used_licenses.md
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/ddl/used_licenses/a_util/MPL2.0.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/ddl/used_licenses/a_util/licenses.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/ddl/used_licenses/a_util/used_oss.md
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/ddl/used_licenses/list_used_licenses.md
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/fep_tooling_base/MPL2.0.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/fep_tooling_base/mpl.md
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/fep_tooling_base/used_licenses.md
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/pkg_rpc/MPL2.0.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/pkg_rpc/licenses.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/pkg_rpc/used_licenses/a_util/MPL2.0.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/pkg_rpc/used_licenses/a_util/licenses.txt
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/pkg_rpc/used_licenses/a_util/used_oss.md
+        - doc/license/used_licenses/fep_sdk_system/used_licenses/fep_sdk_participant/used_licenses/pkg_rpc/used_licenses/list_used_licenses.md
+
+linux_shared_debug:
+    conditions:
+        my_conds:
+            os: Linux
+            build_type: Debug
+    files:
+        - lib/libfep_controller_libd1.1.so
+
+linux_shared_release:
+    conditions:
+        my_conds:
+            os: Linux
+            build_type: Release
+    files:
+        - lib/libfep_controller_lib1.1.so
+
+windows_shared_debug:
+    conditions:
+        my_conds:
+            os: Windows
+            build_type: Debug
+    files:
+        - lib/fep_controller_libd1.1.dll
+        - lib/fep_controller_libd1.1.lib
+
+windows_shared_release:
+    conditions:
+        my_conds:
+            os: Windows
+            build_type: Release
+
+    files:
+        - lib/fep_controller_lib1.1.dll
+        - lib/fep_controller_lib1.1.lib
